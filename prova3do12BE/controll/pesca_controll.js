@@ -27,6 +27,8 @@ const postPesca = (req,res) => {
         }
     })
 }
+
+
 const putPesca = (req,res) => {
     let id = req.body.id
     let cidade = req.body.cidade;
