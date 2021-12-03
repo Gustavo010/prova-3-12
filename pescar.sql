@@ -4,7 +4,7 @@ use Pescaria;
 
 create table Pesca(
     id  integer primary key auto_increment,
-    cidade varchar(100) not null,
+    cidade varchar(200) not null,
     quantidade decimal (9,2) not null
 );
 
