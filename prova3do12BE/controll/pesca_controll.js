@@ -1,7 +1,7 @@
 const { con } = require("./mysql_controll.js")
 const modelo = require('../model/pesca_model.js')
 
-const all = (req,res) => {
+const getPesca = (req,res) => {
     let string = 'select * from pesca'
     con.query(string, (err, result)=>{
         res.json(result)
@@ -59,8 +59,8 @@ const deletePesca = (req,res) => {
 
 
 module.exports = {
-    all,
-    get_id,
+    getPesca,
+    getPescaId,
     postPesca,
     putPesca,
     deletePesca
