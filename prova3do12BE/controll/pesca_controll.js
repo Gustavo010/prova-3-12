@@ -8,7 +8,7 @@ const getPesca = (req,res) => {
     })
 }
 
-const get_id = (req,res) => {
+const getPescaId = (req,res) => {
     let string = 'select * from pesca where id = '+ req.params.id
     con.query(string, (err, result)=>{
         res.json(result)
